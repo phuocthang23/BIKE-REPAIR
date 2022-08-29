@@ -1,0 +1,259 @@
+html{
+    background-image: linear-gradient(#FC5E55, #FA4083);
+}
+body{
+    background-image:url(image/image-lion-background.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+}
+.cover{
+    width: 1024px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+/* _______________________custom header________________________________ */
+header{
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+/* __________________________custom nav_______________________________ */
+nav{
+    width: 350px; 
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} 
+.navbutton{
+    font-family:'Playfair Display', serif;
+    box-sizing: border-box;
+    border: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 9px 19px;
+    display: inline-block;
+    position: relative;
+}
+.navbutton a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbutton:hover{
+    background-color: rgba(219, 219, 63, 0.795);
+    transition: 0.5s;
+
+}
+/* -----------------------------------------dropdown---------------------------- */
+
+.drop-box{
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+}
+.navbutton:hover .drop-box{
+    display: block;
+}
+div.drop-box a{
+    color:  #FA4083;
+    font-family:'Playfair Display', serif ;
+}
+.menu{
+    background-color: white;
+    min-width: 130px;
+    padding:10px 15px;
+    text-align: center;
+}
+.menu:hover{
+    background-color: brown;
+}
+/* ___________________________custom main______________________________ */
+main{
+    min-height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+
+}
+.text-main{
+    flex:60%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-right: 100px;
+}
+p{
+    margin: 0px;
+}
+.image{
+    flex:30%;
+} 
+
+button{
+    display:inline-block;
+    background-color: white;
+    color:  #FA4083;
+    font-family:'Playfair Display', serif ;
+    border: none;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin: 10px auto;
+}
+/* ________________________________style contact________________________________________________ */
+.contact-cover{
+    padding: 0px 30px;
+    font-family:'Roboto', sans-serif;
+}
+div.text-contact h1{
+    text-transform: capitalize;
+    text-shadow: 0px 2px 2px rgba(0,0,0,228);
+}
+.form-cover{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+input[type=text], [type=email]{
+    display:flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    margin: 10px 0 30px;
+    width: 100%;   
+}
+
+.text-contact p{
+    padding-right: 30px;
+}
+textarea{
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+::placeholder{
+    padding: 5px 10px;
+
+}
+.label-phone, .label-email{
+    margin: 0px 15px;
+}
+.inputcover p{
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+input[type=button]{
+    margin: 30px 0px;
+    padding: 10px 30px;
+    border: none;
+    color:  #FA4083;
+    text-transform: capitalize;
+    background-color: white;
+}
+/* ____________________________custom section___________________________ */
+
+.card{
+    min-height: 300px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card h2{
+    margin: 0.6rem 0;
+}
+/* _________________________________custom card box_________________________________ */
+.card-book{
+    min-height: 300px;
+    width: 30%;
+    background-image: url(image/image-background-card1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.card-service{
+    min-height: 300px;
+    width: 30%;
+    background-image: url(image/image-background-card2.jpg);
+    background-size: cover;
+}
+
+.card-advice{
+    min-height: 300px;
+    width: 30%;
+    background-image: url(image/image-background-card3.jpg);
+    background-size: cover;
+
+} 
+
+.card-book, .card-advice, .card-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+} 
+ h2{
+    font-family:'Playfair Display', serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.card-book p, .card-advice p, .card-service p{
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    text-align:center;   
+}
+/* ----------------------------custom content----------------------------------- */
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-box{
+    min-height: 90px;
+    width: 47%;
+    border: white solid 1px;
+    box-sizing: border-box;
+    padding: 30px 50px;
+    margin: 20px 0;
+    font-family:'Roboto', sans-serif ;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ----------------------------------------------------- */
+
+.card a{
+    color: white;
+    text-decoration: none;
+}
+
+.card i{
+    text-decoration: none;
+    font-size: 6.25rem;
+    padding: 40px 0;
+}
